@@ -1,0 +1,315 @@
+@import "resets.css";
+
+/* Main */
+body{
+  margin: 0px;
+  padding: 0px;
+}
+#wrapper {
+  width: 158px;
+  height: 598px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial;
+  border: 1px solid #3d5567;
+  margin: 0 0;
+  border-radius:12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+}
+#banner {
+    width: 158px;
+    height: 598px;
+    top:1px;
+    left:1px;
+    overflow: hidden;
+
+}
+#click-area, #topisi,#frame1, #gradient {
+  position: absolute;
+}
+ #logo, #bg, #text, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7, #findmore {
+  opacity: 0;
+  position: absolute;
+}
+/* Frames */
+
+#logo {
+  background-image: url("../img/logo.png");
+  width: 112px;
+  height: 84px;
+  top: 24px;
+  left: 10px;
+}
+#text{
+  background-image: url("../img/text.png");
+  width: 134px;
+  height: 53px;
+  top: 258px;
+  left: 0px;
+}
+#frame1{
+  background-image: url("../img/frame1.jpg");
+  width: 170px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0.01deg);
+  -webkit-transform: rotate(0.01deg);
+  -ms-transform: rotate(0.01deg);
+}
+#frame2{
+  background-image: url("../img/frame2.jpg");
+  width: 170px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0.01deg);
+  -webkit-transform: rotate(0.01deg);
+  -ms-transform: rotate(0.01deg);
+}
+#frame3{
+  background-image: url("../img/frame3.png");
+  width: 119px;
+  height: 115px;
+  top: 224px;
+  left: 18px;
+}
+#frame4{
+  background-image: url("../img/frame4.jpg");
+  width: 160px;
+  height: 316px;
+  top: 0px;
+  left: 0px;
+}
+#frame5{
+  background-image: url("../img/frame5.png");
+  width: 121px;
+  height: 81px;
+  top: 120px;
+  left: 22px;
+}
+#frame7{
+  background-image: url("../img/frame7.png");
+  width: 130px;
+  height: 68px;
+  top: 150px;
+  left: 12px;
+}
+#findmore{
+  background-image: url("../img/findmore.png");
+  width: 123px;
+  height: 21px;
+  background-color: #72cac8;
+  border-radius:5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  top: 230px;
+  left: 18px;
+
+}
+#findmore:hover{
+  background-color: #B71A8B;
+}
+#click-area{
+  width:158px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+}
+#topisi{
+  height: 36px;
+  width: 100%;
+  bottom: -38px;
+  border-top: 1px solid #3d5567;
+  background-color: #B71A8B;
+  padding-top: 1px;
+}
+#gradient{
+  width: 158px;
+  height: 598px;
+  background: -webkit-radial-gradient(#3d5567 20%, #2a4153 48%, #0c2233 90%);
+  background: -o-radial-gradient(#3d5567 20%, #2a4153 48%, #0c2233 90%);
+  background: -moz-radial-gradient(#3d5567 20%, #2a4153 48%, #0c2233 90%);
+  background: radial-gradient(#3d5567 20%, #2a4153 48%, #0c2233 90%);
+}
+#bg{
+  width: 158px;
+  height: 320px;
+  background: -webkit-radial-gradient( #3d5567 20%, #2a4153 48%, #091f30 70%);
+  background: -o-radial-gradient( #3d5567 20%, #2a4153 48%, #091f30 70%);
+  background: -moz-radial-gradient( #3d5567 20%, #2a4153 48%, #091f30 70%);
+  background: radial-gradient(at  #3d5567 20%, #2a4153 48%, #091f30 70%);
+}
+/* Scroll */
+
+#scroll {
+  opacity: 1;
+  position: absolute;
+  width: 158px;
+  height: 242px;
+  background-color: #fff;
+  /*border-top: 1px solid #000;*/
+  bottom: -281px;
+  /*bottom: 0;*/
+}
+#scroll-wrapper {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  overflow-y: scroll;
+  width: 156px;
+  height: 194px;
+}
+#scroll-content {
+  margin: 4px 6px;
+  font-size: 11px;
+  line-height: 14px;
+  color: #333333;
+}
+#scroll-content ul.main-points {
+  list-style:none;
+}
+#scroll-content ul.main-points>li {
+  padding-bottom: 5px;
+  background: url("../img/bulletpoints.png") left 3px no-repeat;
+  padding-left: 15px;
+}
+#scroll-content ul.main-points>li ul li {
+  list-style: none;background: url("../img/point.png") left 2px no-repeat;
+  margin-left: 5px;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+
+
+#scroll-content p {
+  color: #333333;
+  margin-bottom:10px;
+}
+#scroll-title {
+  background-color: #FFFFFF;
+  height: 28px;
+  line-height: 13px;
+  font-size: 11px;
+
+  color: #398fc8;
+  padding-left: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #3d5567;
+
+}
+#scroll .important{
+	font-size:14px;
+}
+#scroll-title a {
+  color: #398fc8;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#scroll-content a {
+  color: #347876;
+}
+
+#scroll .italic{
+  font-style: italic;
+}
+#scroll .bold{
+  font-weight: bold;
+}
+.frame::-webkit-scrollbar {
+  width: 10px;
+}
+.frame::-webkit-scrollbar-thumb {
+  background-color: #b71a8b;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height:12px;
+}
+.frame::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  border-radius:5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.rightaligned{
+  text-align:right;
+  padding-right:15px;
+}
+/*lines css*/
+#line1, #line2, #line3, #line4, #line5, #line6, #line7, #line8, #line9, #line10 {
+  opacity: 0;
+  position: absolute;
+}
+#lines {
+  width: 104px;
+  height: 46px;
+  top: -1px;
+  right: -1px;
+  position: absolute;
+}
+#line1 {
+  background-image: url('../img/line1.png');
+  width: 103px;
+  height: 56px;
+}
+#line2 {
+  background-image: url('../img/line2.png');
+  width: 103px;
+  height: 56px;
+}
+#line3 {
+  background-image: url('../img/line3.png');
+  width: 103px;
+  height: 56px;
+}
+#line4 {
+  background-image: url('../img/line4.png');
+  width: 103px;
+  height: 56px;
+}
+#line5 {
+  background-image: url('../img/line5.png');
+  width: 103px;
+  height: 56px;
+}
+#line6 {
+  background-image: url('../img/line6.png');
+  width: 103px;
+  height: 56px;
+}
+#line7 {
+  background-image: url('../img/line7.png');
+  width: 103px;
+  height: 56px;
+}
+#line8 {
+  background-image: url('../img/line8.png');
+  width: 103px;
+  height: 56px;
+}
+#line9 {
+  background-image: url('../img/line9.png');
+  width: 103px;
+  height: 56px;
+}
+#line10 {
+  background-image: url('../img/line10.png');
+  width: 104px;
+  height: 56px;
+}
+b{
+  font-weight: bold;
+}
+#scroll-content p#rose {
+  color: #b71a8b;
+  font-size: 14px;
+}
