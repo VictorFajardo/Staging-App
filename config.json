@@ -1,0 +1,15 @@
+[
+  {
+    "jobCode": "ZYT306"
+  },
+  {
+    "concept": "Consumer",
+    "type": "HTML5",
+    "sizes": ["300x250", "300x600", "160x600", "728x90"]
+  },
+  {
+    "concept": "Static",
+    "type": "GIF",
+    "sizes": ["300x250", "300x600", "160x600", "728x90"]
+  }
+]

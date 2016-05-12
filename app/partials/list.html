@@ -1,8 +1,14 @@
 <div>
-	<h1>WUNDERMAN STAGING SERVER</h1>
+	<h1>{{jobCode}} - WUNDERMAN STAGING SERVER</h1>
 
-	<div ng-repeat="item in data">
-		<h2>{{item.concept}}</h2>
-		<h3 ng-repeat="item in item.sizes">{{item}}</h3>
+	<div ng-repeat="obj in data">
+		<h2>{{obj.concept}}</h2>
+		<h3>{{obj.type}}</h3>
+		<ul>
+			<li ng-repeat="item in obj.sizes">
+				<a href="#/{{obj.concept}}/{{item}}" ng-click="$rootScope.type='{{obj.type}}'">{{item}}</a>
+			</li>
+		</ul>
 	</div>
+
 </div>
